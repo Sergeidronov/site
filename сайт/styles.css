@@ -1,0 +1,195 @@
+/* Основные стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Мягкий белый фон */
+    padding-top: 37px; /* Отступ сверху для основного контента, чтобы он не прятался за фиксированной навигацией */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #6cc7f7; /* Мягкий голубой цвет для верхней части */
+    color: white; /* Белый цвет текста */
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.contact-info p {
+    color: white; /* Белый цвет текста */
+    margin-left: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Легкая тень */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black; /* Черный цвет ссылок */
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    color: #6cc7f7; /* Голубой цвет при наведении */
+    background-color: rgba(108, 199, 247, 0.1); /* Легкий голубой фон при наведении */
+    border-radius: 5px; /* Скругленные углы */
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    height: 400px; /* Установка высоты секции hero */
+    overflow: hidden; /* Чтобы обрезать изображение */
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Сохранение пропорций и заполнение области */
+    display: block;
+}
+
+.cta-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    background-color: #4eaed9; /* Мягкий голубой цвет для кнопки */
+    color: white; /* Белый цвет текста кнопки */
+    border: none;
+    border-radius: 30px; /* Полукруглые края */
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    transition: background-color 0.3s, transform 0.3s; /* Плавные переходы */
+}
+
+.cta-button:hover {
+    background-color: #6cc7f7; /* Немного ярче при наведении */
+    transform: translateX(-50%) scale(1.05); /* Увеличение при наведении */
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.feature {
+    width: 45%;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #ffffff; /* Белый цвет фона */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+    color: #1b1818;
+}
+
+.contacts {
+    text-align: center;
+    background-color: #6cc7f7; /* Голубой фон */
+    padding: 50px 0;
+    color: white; /* Белый цвет текста */
+}
+
+.contacts h2 {
+    margin-bottom: 20px;
+    
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-box {
+    width: 300px;
+    padding: 20px;
+    background-color: white; /* Белый фон */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black; /* Черный цвет текста */
+}
+
+.contact-box address, .contact-box p {
+    margin: 0;
+    text-align: center;
+}
+
+.faq {
+    background-color: #f5f5f5; /* Мягкий белый фон */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.faq h2 {
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    background-color: white; /* Белый фон */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 800px; /* Ограничение ширины */
+    margin: 0 auto; /* Центровка элементов */
+}
+
+.faq-item h3 {
+    color: #6cc7f7; /* Голубой цвет для заголовка */
+}
+
+footer {
+    background-color: #6cc7f7; /* Цвет фона футера */
+    color: white; /* Цвет текста */
+    padding: 20px 0; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.footer-content p {
+    margin: 5px 0; /* Внешние отступы абзацев */
+}
